@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Varela+Round&display=swap');
+
+body {
+    background-color: rgb(229, 240, 24);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add a gradient background to the header */
+nav {
+    background: linear-gradient(to bottom, #1e1e1e, #020202);
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    transition: all 0.3s;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 12px;
+    transition: all 0.3s;
+}
+
+.brand img {
+    width: 50px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    transition: all 0.3s;
+}
+
+.container {
+    min-height: 50vh;
+    background-image: linear-gradient(red,blue,green); /* Add a background color */
+    border-radius: 8px;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    padding: 34px;
+    transition: all 0.3s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+}
+
+.bottom {
+    position: sticky;
+    height: 80px;
+    background: linear-gradient(to bottom, #1e1e1e, #000000);
+    color: white;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.3s;
+}
+
+/* Add a subtle hover effect for navigation items */
+nav ul li:hover {
+    transform: translateY(-3px);
+}
+
+/* Add animation to the header and container */
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Add a gradient background to the songItem */
+.songItem {
+    height: 50px;
+    display: flex;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    width: 80%;
+    color: black;
+    margin: 12px 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 34px;
+    transition: all 0.3s;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+.songItem img {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 45px;
+    height: 45px;
+    margin: 0 23px;
+}
+
+.timestamp {
+    margin: 0 23px;
+}
+
+/* Add a subtle hover effect for song items */
+.songItem:hover {
+    transform: translateY(-3px);
+}
+
+#myProgressBar{
+    display: flex;
+    width: 500px;
+}
+
+@media screen and (max-width:500px) {
+    #myProgressBar{
+        width: 350px;
+    }
+    
+}
